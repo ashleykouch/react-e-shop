@@ -1,0 +1,11 @@
+.Home {
+  &_Img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+      width: 75vw;
+      height: 500px;
+    }
+  }
+}
