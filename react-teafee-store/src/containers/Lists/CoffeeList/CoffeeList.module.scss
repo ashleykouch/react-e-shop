@@ -1,0 +1,9 @@
+.List {
+  &_Card {
+    margin: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
