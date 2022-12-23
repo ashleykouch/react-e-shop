@@ -1,6 +1,6 @@
 // create all the functions that are needed to create, read, update and delete data from firestore
 
-import { collection, getDocs } from "firebase/firestore";
+import { addDoc, collection, getDocs } from "firebase/firestore";
 import { db } from "../Firestore";
 
 export const getCoffeeData = async () => {
@@ -19,3 +19,16 @@ export const getCoffeeData = async () => {
 
   return data;
 };
+
+// export const addCoffee = async (data) => {
+//   const { productName, productBrand, productPrice } = data;
+//   const coffee = { productName, productBrand, productPrice };
+
+//   const collectionRef = collection(db, "coffee");
+
+//   const newDoc = await addDoc(collectionRef, coffee);
+
+//   console.log(newDoc, "new doc added");
+
+//   return newDoc;
+// };

@@ -3,13 +3,15 @@ import CoffeeCard from "../../../components/Cards/CoffeeCard/CoffeeCard";
 
 const CoffeeList = ({ coffee }) => {
   return (
-    <div className={styles.List}>
-      <h2>CoffeeList</h2>
-      <div className={styles.List_Card}>
-        {coffee &&
-          coffee.map((coffees) => {
-            return <CoffeeCard key={coffees.id} coffees={coffee} />;
-          })}
+    <div>
+      <h1>Coffee</h1>
+      <div className={styles.List}>
+        <div className={styles.List_Card}>
+          {coffee &&
+            coffee.map((coffees) => {
+              return <CoffeeCard key={coffees.id} coffees={coffees} />;
+            })}
+        </div>
       </div>
     </div>
   );
