@@ -3,7 +3,7 @@ import CoffeeCard from "../../../components/Cards/CoffeeCard/CoffeeCard";
 
 const CoffeeList = ({ coffee }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Coffee</h1>
       <div className={styles.List}>
         <div className={styles.List_Card}>

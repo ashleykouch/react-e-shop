@@ -6,6 +6,7 @@ const CoffeeCard = ({ coffees }) => {
       <h2>{coffees.productName}</h2>
       <h3>{coffees.productBrand}</h3>
       <p>${coffees.productPrice}</p>
+      <button className={styles.AddToCartBtn}>Add to Cart</button>
     </div>
   );
 };
