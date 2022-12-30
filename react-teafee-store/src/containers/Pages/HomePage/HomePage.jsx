@@ -7,41 +7,41 @@ import { getCoffeeData } from "../../../services/CoffeeData";
 import TeaList from "../../Lists/TeaList/TeaList";
 import { getTeaData } from "../../../services/TeaData";
 
-const HomePage = () => {
-  // coffee
-  // call the get data function when page mounts
+const HomePage = ({ coffee, tea, addToCart }) => {
+  // // coffee
+  // // call the get data function when page mounts
 
-  const [coffee, setCoffee] = useState([]);
+  // const [coffee, setCoffee] = useState([]);
 
-  // useEffect wuth an empty watch list
-  useEffect(() => {
-    const coffeeWrapper = async () => {
-      const coffeeData = await getCoffeeData();
-      setCoffee(coffeeData);
-    };
-    coffeeWrapper();
-  }, []);
+  // // useEffect wuth an empty watch list
+  // useEffect(() => {
+  //   const coffeeWrapper = async () => {
+  //     const coffeeData = await getCoffeeData();
+  //     setCoffee(coffeeData);
+  //   };
+  //   coffeeWrapper();
+  // }, []);
 
-  // tea
-  // call the get data function when page mounts
+  // // tea
+  // // call the get data function when page mounts
 
-  const [tea, setTea] = useState([]);
+  // const [tea, setTea] = useState([]);
 
-  // useEffect with an empty watch list
-  useEffect(() => {
-    const teaWrapper = async () => {
-      const teaData = await getTeaData();
-      setTea(teaData);
-    };
-    teaWrapper();
-  }, []);
+  // // useEffect with an empty watch list
+  // useEffect(() => {
+  //   const teaWrapper = async () => {
+  //     const teaData = await getTeaData();
+  //     setTea(teaData);
+  //   };
+  //   teaWrapper();
+  // }, []);
 
   return (
     <div className={styles.Home}>
       <div className={styles.Home_Img}>
         <img src={Home_Image} alt="img-background" />
       </div>
-      <CoffeeList coffee={coffee} />
+      <CoffeeList coffee={coffee} addToCart={addToCart} />
       <TeaList tea={tea} />
     </div>
   );

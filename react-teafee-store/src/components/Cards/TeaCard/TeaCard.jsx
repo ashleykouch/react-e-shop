@@ -6,6 +6,7 @@ const TeaCard = ({ teas }) => {
       <h2>{teas.productName}</h2>
       <h3>{teas.productBrand}</h3>
       <p>{teas.productPrice}</p>
+      <button className={styles.AddToCartBtn}>Add to Cart</button>
     </div>
   );
 };
