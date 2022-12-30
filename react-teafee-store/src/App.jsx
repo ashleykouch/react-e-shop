@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import { getCoffeeData } from "./services/CoffeeData";
 import { getTeaData } from "./services/TeaData";
 import CoffeeProductPage from "./components/ProductPage/CoffeeProductPage/CoffeeProductPage";
+import TeaProductPage from "./components/ProductPage/TeaProductPage/TeaProductPage";
 
 const App = () => {
   // coffee
@@ -73,6 +74,7 @@ const App = () => {
             element={<CoffeeProductPage coffee={coffee} />}
           />
           <Route path="/tea" element={<TeaPage />}></Route>
+          <Route path="/tea/:id" element={<TeaProductPage tea={tea} />} />
           <Route path="/cart" element={<CartPage cart={cart} />}></Route>
         </Routes>
       </BrowserRouter>
