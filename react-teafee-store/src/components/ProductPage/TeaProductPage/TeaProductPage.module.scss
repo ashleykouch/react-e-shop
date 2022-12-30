@@ -1,0 +1,53 @@
+.Product {
+  &_Page {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  &_Image {
+    margin-right: 150px;
+    & img {
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  &_Types {
+    margin-right: 100px;
+  }
+
+  &_Items {
+    padding: 10px;
+    width: 400px;
+    margin: 5px 0px;
+  }
+
+  &_AddToCartBtn {
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    margin-top: 30px;
+    margin: 10px;
+    border-color: #659b6c;
+    background-color: #659b6c;
+    color: white;
+  }
+
+  &_Qty {
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_Counter {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+
+    &_Btn {
+      border: none;
+    }
+  }
+}

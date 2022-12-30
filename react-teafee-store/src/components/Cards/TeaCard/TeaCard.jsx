@@ -1,7 +1,7 @@
 import styles from "./TeaCard.module.scss";
 import { NavLink } from "react-router-dom";
 
-const TeaCard = ({ teas }) => {
+const TeaCard = ({ teas, addToCart }) => {
   return (
     <>
       <div>
@@ -14,7 +14,12 @@ const TeaCard = ({ teas }) => {
             <h4 className={styles.Card_Items}>{teas.productBrand}</h4>
             <p className={styles.Card_Items}>{teas.productPrice}</p>
           </NavLink>
-          <button className={styles.AddToCartBtn}>Add to Cart</button>
+          <button
+            className={styles.AddToCartBtn}
+            onClick={() => addToCart(teas)}
+          >
+            Add to Cart
+          </button>
         </div>
       </div>
     </>

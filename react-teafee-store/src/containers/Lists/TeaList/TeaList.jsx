@@ -1,7 +1,7 @@
 import TeaCard from "../../../components/Cards/TeaCard/TeaCard";
 import styles from "./TeaList.module.scss";
 
-const TeaList = ({ tea }) => {
+const TeaList = ({ tea, addToCart }) => {
   return (
     <div>
       <h2>TeaList</h2>
@@ -9,7 +9,9 @@ const TeaList = ({ tea }) => {
         <div className={styles.List_Card}>
           {tea &&
             tea.map((teas) => {
-              return <TeaCard key={teas.id} teas={teas} />;
+              return (
+                <TeaCard key={teas.id} teas={teas} addToCart={addToCart} />
+              );
             })}
         </div>
       </div>

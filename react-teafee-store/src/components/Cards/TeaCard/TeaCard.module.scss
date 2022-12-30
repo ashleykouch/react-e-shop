@@ -1,5 +1,5 @@
 .Card {
-  border: 2px solid #af9185;
+  border: 1px solid #af9185;
   border-radius: 6px;
   padding: 20px;
   width: 250px;
@@ -25,10 +25,11 @@ img {
 .AddToCartBtn {
   position: relative;
   width: 250px;
+  height: 28px;
   text-align: center;
   margin-top: 30px;
   border-color: #659b6c;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #659b6c;
   color: white;
 }
