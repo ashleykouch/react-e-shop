@@ -4,7 +4,6 @@ import styles from "./TeaList.module.scss";
 const TeaList = ({ tea, addToCart }) => {
   return (
     <div>
-      <h2>TeaList</h2>
       <div className={styles.List}>
         <div className={styles.List_Card}>
           {tea &&
