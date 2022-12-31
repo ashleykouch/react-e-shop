@@ -1,0 +1,15 @@
+.Cart {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+
+  &_Image {
+    & img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}

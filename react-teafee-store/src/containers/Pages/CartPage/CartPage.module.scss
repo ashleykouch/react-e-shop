@@ -1,0 +1,15 @@
+.Cart {
+  margin-top: 100px;
+
+  &_Header {
+    margin-bottom: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_Title {
+      letter-spacing: 0.5em;
+    }
+  }
+}
