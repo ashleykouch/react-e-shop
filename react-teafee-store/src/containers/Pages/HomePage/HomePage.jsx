@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { getCoffeeData } from "../../../services/CoffeeData";
 import TeaList from "../../Lists/TeaList/TeaList";
 import { getTeaData } from "../../../services/TeaData";
+import ProductNav from "../../../components/ProductNav/ProductNav";
 
 const HomePage = ({ coffee, tea, addToCart }) => {
   // // coffee
@@ -45,6 +46,9 @@ const HomePage = ({ coffee, tea, addToCart }) => {
         <h1 className={styles.Home_Title_Coffee}>COFFEE</h1>
       </div>
       <CoffeeList coffee={coffee} addToCart={addToCart} />
+      <div className={styles.Home_Nav}>
+        <ProductNav />
+      </div>
       <div className={styles.Home_Items}>
         <h1 className={styles.Home_Title_Tea}>TEA</h1>
       </div>
