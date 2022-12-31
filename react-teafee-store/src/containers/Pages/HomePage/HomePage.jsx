@@ -52,7 +52,7 @@ const HomePage = ({ coffee, tea, addToCart }) => {
       <div className={styles.Home_Items}>
         <h1 className={styles.Home_Title_Tea}>TEA</h1>
       </div>
-      <TeaList tea={tea} />
+      <TeaList tea={tea} addToCart={addToCart} />
     </div>
   );
 };
