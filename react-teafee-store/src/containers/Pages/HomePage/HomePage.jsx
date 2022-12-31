@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import { getCoffeeData } from "../../../services/CoffeeData";
 import TeaList from "../../Lists/TeaList/TeaList";
 import { getTeaData } from "../../../services/TeaData";
-import Footer from "../../Footer/Footer";
 
 const HomePage = ({ coffee, tea, addToCart }) => {
   // // coffee
@@ -50,9 +49,6 @@ const HomePage = ({ coffee, tea, addToCart }) => {
         <h1 className={styles.Home_Title_Tea}>TEA</h1>
       </div>
       <TeaList tea={tea} />
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 };

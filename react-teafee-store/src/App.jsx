@@ -12,6 +12,7 @@ import { getCoffeeData } from "./services/CoffeeData";
 import { getTeaData } from "./services/TeaData";
 import CoffeeProductPage from "./components/ProductPage/CoffeeProductPage/CoffeeProductPage";
 import TeaProductPage from "./components/ProductPage/TeaProductPage/TeaProductPage";
+import Footer from "./containers/Footer/Footer";
 
 const App = () => {
   // coffee
@@ -68,16 +69,23 @@ const App = () => {
               <HomePage coffee={coffee} tea={tea} addToCart={addToCart} />
             }
           ></Route>
-          <Route path="/coffee" element={<CoffeePage />}></Route>
+          <Route
+            path="/coffee"
+            element={<CoffeePage coffee={coffee} addToCart={addToCart} />}
+          ></Route>
           <Route
             path="/coffee/:id"
             element={<CoffeeProductPage coffee={coffee} />}
           />
-          <Route path="/tea" element={<TeaPage />}></Route>
+          <Route
+            path="/tea"
+            element={<TeaPage tea={tea} addToCart={addToCart} />}
+          ></Route>
           <Route path="/tea/:id" element={<TeaProductPage tea={tea} />} />
           <Route path="/cart" element={<CartPage cart={cart} />}></Route>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 };
