@@ -13,6 +13,7 @@ import { getTeaData } from "./services/TeaData";
 import CoffeeProductPage from "./components/ProductPage/CoffeeProductPage/CoffeeProductPage";
 import TeaProductPage from "./components/ProductPage/TeaProductPage/TeaProductPage";
 import Footer from "./containers/Footer/Footer";
+import CheckoutPage from "./containers/Pages/CheckoutPage/CheckoutPage";
 
 const App = () => {
   // coffee
@@ -86,6 +87,7 @@ const App = () => {
             element={<TeaProductPage tea={tea} addToCart={addToCart} />}
           />
           <Route path="/cart" element={<CartPage cart={cart} />}></Route>
+          <Route path="/checkout" element={<CheckoutPage />}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />

@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import CartItem from "../../../components/CartItem/CartItem";
+import CheckoutPage from "../CheckoutPage/CheckoutPage";
 import styles from "./CartPage.module.scss";
 
 const CartPage = ({ cart }) => {
@@ -16,6 +18,11 @@ const CartPage = ({ cart }) => {
       <span className={styles.LineBreak}>
         <hr />
       </span>
+      <div className={styles.Cart_Checkout}>
+        <Link to="/checkout">
+          <button>Checkout</button>
+        </Link>
+      </div>
     </>
   );
 };
