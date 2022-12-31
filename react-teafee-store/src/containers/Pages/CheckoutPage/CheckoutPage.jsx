@@ -1,6 +1,6 @@
-import React from "react";
-import Select from "react-select";
+import BillingAddress from "./BillingAddress/BillingAddress";
 import CustomerInfo from "./CustomerInfo/CustomerInfo";
+import PaymentInfo from "./PaymentInfo/PaymentInfo";
 
 const CheckoutPage = () => {
   return (
@@ -10,6 +10,11 @@ const CheckoutPage = () => {
         <p>Please fill in required fields *</p>
       </div>
       <CustomerInfo />
+      <PaymentInfo />
+      <BillingAddress />
+      <div>
+        <button>Complete Checkout and Pay</button>
+      </div>
     </div>
   );
 };
