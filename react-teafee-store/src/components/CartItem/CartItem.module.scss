@@ -12,6 +12,17 @@
       height: 150px;
     }
   }
+
+  &_Counter {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+
+    &_Btn {
+      border: none;
+    }
+  }
 }
 
 .RemovedItem {

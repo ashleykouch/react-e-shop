@@ -14,6 +14,7 @@ import CoffeeProductPage from "./components/ProductPage/CoffeeProductPage/Coffee
 import TeaProductPage from "./components/ProductPage/TeaProductPage/TeaProductPage";
 import Footer from "./containers/Footer/Footer";
 import CheckoutPage from "./containers/Pages/CheckoutPage/CheckoutPage";
+import OrderPage from "./containers/Pages/OrderPage/OrderPage";
 
 const App = () => {
   // coffee
@@ -88,9 +89,10 @@ const App = () => {
           />
           <Route path="/cart" element={<CartPage cart={cart} />}></Route>
           <Route path="/checkout" element={<CheckoutPage />}></Route>
+          <Route path="/order" element={<OrderPage />}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 };
