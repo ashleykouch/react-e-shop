@@ -3,7 +3,7 @@ import styles from "./CustomerInfo.module.scss";
 const CustomerInfo = () => {
   return (
     <div className={styles.CustomerInfo}>
-      <h2>Customer Information</h2>
+      <h2 className={styles.Info_Header}>Customer Information</h2>
       <div className={styles.Info}>
         <label className={styles.Info_Items}>
           First Name

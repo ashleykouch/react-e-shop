@@ -3,7 +3,7 @@ import styles from "./BillingAddress.module.scss";
 const BillingAddress = () => {
   return (
     <div className={styles.BillingAddress}>
-      <h2>Billing Address</h2>
+      <h2 className={styles.Info_Header}>Billing Address</h2>
       <div className={styles.Info}>
         <label className={styles.Info_Items_Check}>
           <input className={styles.Info_Input} type="checkbox" name="same" />

@@ -1,19 +1,21 @@
 import BillingAddress from "./BillingAddress/BillingAddress";
 import CustomerInfo from "./CustomerInfo/CustomerInfo";
 import PaymentInfo from "./PaymentInfo/PaymentInfo";
+import styles from "./CheckoutPage.module.scss";
+import { Link } from "react-router-dom";
 
 const CheckoutPage = () => {
   return (
-    <div>
-      <h1> Checkout</h1>
-      <div>
-        <p>Please fill in required fields *</p>
-      </div>
+    <div className={styles.Checkout}>
+      <h1 className={styles.Checkout_Header}>Checkout</h1>
+      <p className={styles.Checkout_Para}>Please fill in required fields *</p>
       <CustomerInfo />
       <PaymentInfo />
       <BillingAddress />
-      <div>
-        <button>Complete Checkout and Pay</button>
+      <div className={styles.Checkout_Btn}>
+        <Link to="/order">
+          <button>Complete Checkout and Pay</button>
+        </Link>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import styles from "./PaymentInfo.module.scss";
 const PaymentInfo = () => {
   return (
     <div className={styles.PaymentInfo}>
-      <h2>Payment Info</h2>
+      <h2 className={styles.Info_Header}>Payment Info</h2>
       <div className={styles.Info}>
         <label className={styles.Info_Items_Check}>
           <input type="radio" name="credit" />
@@ -54,7 +54,7 @@ const PaymentInfo = () => {
           </select>
         </label>
         <label className={styles.Info_Items}>
-          Credit Card Number
+          CVC
           <input
             className={styles.Info_Input}
             type="text"

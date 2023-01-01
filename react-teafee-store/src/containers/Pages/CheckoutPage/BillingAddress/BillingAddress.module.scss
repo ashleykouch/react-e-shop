@@ -1,23 +1,29 @@
 .Info {
-  width: 60vw;
+  width: 800px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  font-size: 16px;
+
+  &_Header {
+    margin: 10px;
+  }
 
   &_Items {
     display: flex;
     flex-direction: column;
     width: 200px;
     margin: 10px;
+    font-size: 16px;
 
     &_Check {
-      margin-left: 10px;
-      width: 60vw;
+      width: 1000px;
+      margin: 10px;
     }
   }
 
   &_Input {
     border: 1px solid grey;
+    font-size: 16px;
   }
 }
