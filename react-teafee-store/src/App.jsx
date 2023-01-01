@@ -18,6 +18,7 @@ import OrderPage from "./containers/Pages/OrderPage/OrderPage";
 import Terms from "./containers/Pages/CustomerCarePages/Terms/Terms";
 import Shipping from "./containers/Pages/CustomerCarePages/Shipping/Shipping";
 import Refund from "./containers/Pages/CustomerCarePages/Refund/Refund";
+import Subscription from "./containers/Pages/Subscription/Subscription";
 
 const App = () => {
   // coffee
@@ -96,6 +97,7 @@ const App = () => {
           <Route path="/terms-and-conditions" element={<Terms />}></Route>
           <Route path="/shipping-and-returns" element={<Shipping />}></Route>
           <Route path="/refund-policy" element={<Refund />}></Route>
+          <Route path="/subscribe" element={<Subscription />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

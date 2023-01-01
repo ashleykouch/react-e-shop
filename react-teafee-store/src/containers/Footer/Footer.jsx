@@ -12,15 +12,21 @@ const Footer = () => {
           <h2 className={styles.Footer_Items_Header}>Contact Info.</h2>
           <div className={styles.Footer_Items_Img}>
             <img src={github} alt="github" />
-            <p className={styles.Footer_Items_Content}>Github</p>
+            <p className={styles.Footer_Items_Content}>
+              https://github.com/ashleykouch
+            </p>
           </div>
           <div className={styles.Footer_Items_Img}>
             <img src={linkedIn} alt="linkedin" />
-            <p className={styles.Footer_Items_Content}>LinkedIn</p>
+            <p className={styles.Footer_Items_Content}>
+              www.linkedin.com/in/ashley-kouch99
+            </p>
           </div>
           <div className={styles.Footer_Items_Img}>
             <img src={email} alt="email" />
-            <p className={styles.Footer_Items_Content}>Email</p>
+            <p className={styles.Footer_Items_Content}>
+              ashleykouch99@gmail.com
+            </p>
           </div>
         </div>
 
@@ -54,7 +60,7 @@ const Footer = () => {
             type="text"
             placeholder="Enter your email address"
           />
-          <Link to="/" className={styles.Footer_Items_Btn}>
+          <Link to="/subscribe" className={styles.Footer_Items_Btn}>
             <button>Subscribe</button>
           </Link>
         </div>
