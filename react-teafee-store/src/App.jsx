@@ -15,6 +15,9 @@ import TeaProductPage from "./components/ProductPage/TeaProductPage/TeaProductPa
 import Footer from "./containers/Footer/Footer";
 import CheckoutPage from "./containers/Pages/CheckoutPage/CheckoutPage";
 import OrderPage from "./containers/Pages/OrderPage/OrderPage";
+import Terms from "./containers/Pages/CustomerCarePages/Terms/Terms";
+import Shipping from "./containers/Pages/CustomerCarePages/Shipping/Shipping";
+import Refund from "./containers/Pages/CustomerCarePages/Refund/Refund";
 
 const App = () => {
   // coffee
@@ -47,9 +50,9 @@ const App = () => {
 
   const [cart, setCart] = useState(null);
   const addToCart = (data) => {
-    // if (cart && cart.filter((item) => item.id === data.id).length > 0) {
-    //   return "exists";
-    // }
+    if (cart && cart.filter((item) => item.id === data.id).length > 0) {
+      return "exists";
+    }
 
     data.qty = 1;
     console.log(data, "addtocart");
@@ -90,6 +93,9 @@ const App = () => {
           <Route path="/cart" element={<CartPage cart={cart} />}></Route>
           <Route path="/checkout" element={<CheckoutPage />}></Route>
           <Route path="/order" element={<OrderPage />}></Route>
+          <Route path="/terms-and-conditions" element={<Terms />}></Route>
+          <Route path="/shipping-and-returns" element={<Shipping />}></Route>
+          <Route path="/refund-policy" element={<Refund />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

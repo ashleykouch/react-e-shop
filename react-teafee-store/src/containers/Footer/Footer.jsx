@@ -25,15 +25,21 @@ const Footer = () => {
         </div>
 
         <div className={styles.Footer_Items}>
-          <h2 className={styles.Footer_Items_Header}>Links</h2>
-          <NavLink to="/" className={styles.Footer_Items_Content}>
-            Link 1
+          <h2 className={styles.Footer_Items_Header}>Customer Care</h2>
+          <NavLink
+            to="/shipping-and-returns"
+            className={styles.Footer_Items_Content}
+          >
+            Shipping and Returns
           </NavLink>
-          <NavLink to="/" className={styles.Footer_Items_Content}>
-            Link 2
+          <NavLink
+            to="/terms-and-conditions"
+            className={styles.Footer_Items_Content}
+          >
+            Terms and Conditions
           </NavLink>
-          <NavLink to="/" className={styles.Footer_Items_Content}>
-            Link 3
+          <NavLink to="/refund-policy" className={styles.Footer_Items_Content}>
+            Refund Policy
           </NavLink>
         </div>
         <div className={styles.Footer_Items}>
