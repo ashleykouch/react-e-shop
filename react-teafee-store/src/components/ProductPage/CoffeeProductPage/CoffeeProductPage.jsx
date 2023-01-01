@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import styles from "./CoffeeProductPage.module.scss";
 import ImageGallery from "react-image-gallery";
 
-const CoffeeProductPage = ({ coffee }) => {
+const CoffeeProductPage = ({ coffee, addToCart }) => {
   // fetch data from firebase
   const { id } = useParams();
 
@@ -57,7 +57,12 @@ const CoffeeProductPage = ({ coffee }) => {
               </button>
             </div>
           </div>
-          <button className={styles.Product_AddToCartBtn}>Add to Cart</button>
+          <button
+            className={styles.Product_AddToCartBtn}
+            onClick={() => addToCart(coffee)}
+          >
+            Add to Cart
+          </button>
           <h3 className={styles.Product_Items}>Description</h3>
           <p className={styles.Product_Items}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus

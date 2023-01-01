@@ -81,7 +81,9 @@ const App = () => {
           ></Route>
           <Route
             path="/coffee/:id"
-            element={<CoffeeProductPage coffee={coffee} />}
+            element={
+              <CoffeeProductPage coffee={coffee} addToCart={addToCart} />
+            }
           />
           <Route
             path="/tea"
