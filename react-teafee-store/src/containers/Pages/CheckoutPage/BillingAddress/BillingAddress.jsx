@@ -1,21 +1,26 @@
-import React from "react";
+import styles from "./BillingAddress.module.scss";
 
 const BillingAddress = () => {
   return (
-    <div>
+    <div className={styles.BillingAddress}>
       <h2>Billing Address</h2>
-      <div>
-        <label>
-          <input type="checkbox" name="same" />
+      <div className={styles.Info}>
+        <label className={styles.Info_Items_Check}>
+          <input className={styles.Info_Input} type="checkbox" name="same" />
           Billing address same as shipping
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Billing Name
-          <input type="text" name="billingName" placeholder="John Smith" />
+          <input
+            className={styles.Info_Input}
+            type="text"
+            name="billingName"
+            placeholder="John Smith"
+          />
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Select Country
-          <select>
+          <select className={styles.Info_Input}>
             <option value="" hidden>
               Select...
             </option>
@@ -23,17 +28,28 @@ const BillingAddress = () => {
             <option value="New Zealand">New Zealand</option>
           </select>
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Address
-          <input type="text" name="address" placeholder="123 Example St" />
+          <input
+            className={styles.Info_Input}
+            type="text"
+            name="address"
+            placeholder="123 Example St"
+          />
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Town/City
-          <input type="text" name="town/city" placeholder="Sydney" required />
+          <input
+            className={styles.Info_Input}
+            type="text"
+            name="town/city"
+            placeholder="Sydney"
+            required
+          />
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Country/State/Territory
-          <select>
+          <select className={styles.Info_Input}>
             <option value="" hidden>
               Select...
             </option>
@@ -48,9 +64,15 @@ const BillingAddress = () => {
             <option value="Wellington">Wellington</option>
           </select>
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           PostCode
-          <input type="text" name="postCode" placeholder="0000" required />
+          <input
+            className={styles.Info_Input}
+            type="text"
+            name="postCode"
+            placeholder="0000"
+            required
+          />
         </label>
       </div>
     </div>

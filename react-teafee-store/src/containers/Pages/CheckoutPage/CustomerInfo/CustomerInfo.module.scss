@@ -1,0 +1,18 @@
+.Info {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &_Items {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px;
+  }
+
+  &_Input {
+    border: 1px solid grey;
+  }
+}

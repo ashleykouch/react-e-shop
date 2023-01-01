@@ -2,28 +2,50 @@ import styles from "./CustomerInfo.module.scss";
 
 const CustomerInfo = () => {
   return (
-    <div>
+    <div className={styles.CustomerInfo}>
       <h2>Customer Information</h2>
-      <div>
-        <label>
+      <div className={styles.Info}>
+        <label className={styles.Info_Items}>
           First Name
-          <input type="text" name="firstName" placeholder="John" required />
+          <input
+            className={styles.Info_Input}
+            type="text"
+            name="firstName"
+            placeholder="John"
+            required
+          />
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Last Name
-          <input type="text" name="lastName" placeholder="Smith" required />
+          <input
+            className={styles.Info_Input}
+            type="text"
+            name="lastName"
+            placeholder="Smith"
+            required
+          />
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Email
-          <input type="text" name="email" placeholder="example@example.com" />
+          <input
+            className={styles.Info_Input}
+            type="text"
+            name="email"
+            placeholder="example@example.com"
+          />
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Address
-          <input type="text" name="address" placeholder="123 Example St" />
+          <input
+            className={styles.Info_Input}
+            type="text"
+            name="address"
+            placeholder="123 Example St"
+          />
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Select Country
-          <select>
+          <select className={styles.Info_Input}>
             <option value="" hidden>
               Select...
             </option>
@@ -31,13 +53,19 @@ const CustomerInfo = () => {
             <option value="New Zealand">New Zealand</option>
           </select>
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Town/City
-          <input type="text" name="town/city" placeholder="Sydney" required />
+          <input
+            className={styles.Info_Input}
+            type="text"
+            name="town/city"
+            placeholder="Sydney"
+            required
+          />
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           Country/State/Territory
-          <select>
+          <select className={styles.Info_Input}>
             <option value="" hidden>
               Select...
             </option>
@@ -52,9 +80,15 @@ const CustomerInfo = () => {
             <option value="Wellington">Wellington</option>
           </select>
         </label>
-        <label>
+        <label className={styles.Info_Items}>
           PostCode
-          <input type="text" name="postCode" placeholder="0000" required />
+          <input
+            className={styles.Info_Input}
+            type="text"
+            name="postCode"
+            placeholder="0000"
+            required
+          />
         </label>
       </div>
     </div>
