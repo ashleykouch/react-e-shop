@@ -3,8 +3,9 @@ import CustomerInfo from "./CustomerInfo/CustomerInfo";
 import PaymentInfo from "./PaymentInfo/PaymentInfo";
 import styles from "./CheckoutPage.module.scss";
 import { Link } from "react-router-dom";
+import OrderSummary from "../../../components/Cards/OrderSummary/OrderSummary";
 
-const CheckoutPage = () => {
+const CheckoutPage = ({ checkCart }) => {
   return (
     <div className={styles.Checkout}>
       <h1 className={styles.Checkout_Header}>Checkout</h1>

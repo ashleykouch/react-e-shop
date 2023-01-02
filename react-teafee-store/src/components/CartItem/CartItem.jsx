@@ -55,7 +55,7 @@ const CartItem = ({ carts }) => {
               +
             </button>
           </div>
-          <h3>{carts.productPrice}</h3>
+          <h3>${carts.productPrice}</h3>
           <button onClick={handleClick}>X</button>
         </div>
       ) : (

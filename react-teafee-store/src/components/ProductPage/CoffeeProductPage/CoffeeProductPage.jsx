@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./CoffeeProductPage.module.scss";
-import ImageGallery from "react-image-gallery";
+import CoffeeImage from "../../../assets/coffee-image.jpeg";
+import { Carousel } from "react-bootstrap";
 
 const CoffeeProductPage = ({ coffee, addToCart }) => {
   // fetch data from firebase
@@ -38,7 +39,9 @@ const CoffeeProductPage = ({ coffee, addToCart }) => {
         <div className={styles.Product_Types}>
           <h1 className={styles.Product_Items}>{coffeeProduct.productName}</h1>
           <h2 className={styles.Product_Items}>{coffeeProduct.productBrand}</h2>
-          <h2 className={styles.Product_Items}>{coffeeProduct.productPrice}</h2>
+          <h2 className={styles.Product_Items}>
+            ${coffeeProduct.productPrice}
+          </h2>
           <div className={styles.Product_Qty}>
             <h3>Quantity:</h3>
             <div className={styles.Product_Counter}>

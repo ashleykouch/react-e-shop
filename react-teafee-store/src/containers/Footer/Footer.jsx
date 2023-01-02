@@ -59,6 +59,7 @@ const Footer = () => {
             className={styles.Footer_Items_Input}
             type="text"
             placeholder="Enter your email address"
+            required
           />
           <Link to="/subscribe" className={styles.Footer_Items_Btn}>
             <button>Subscribe</button>

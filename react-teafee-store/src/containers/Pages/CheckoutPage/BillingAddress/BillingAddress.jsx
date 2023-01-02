@@ -2,7 +2,7 @@ import styles from "./BillingAddress.module.scss";
 
 const BillingAddress = () => {
   return (
-    <div className={styles.BillingAddress}>
+    <form className={styles.BillingAddress}>
       <h2 className={styles.Info_Header}>Billing Address</h2>
       <div className={styles.Info}>
         <label className={styles.Info_Items_Check}>
@@ -16,6 +16,7 @@ const BillingAddress = () => {
             type="text"
             name="billingName"
             placeholder="John Smith"
+            required
           />
         </label>
         <label className={styles.Info_Items}>
@@ -75,7 +76,7 @@ const BillingAddress = () => {
           />
         </label>
       </div>
-    </div>
+    </form>
   );
 };
 

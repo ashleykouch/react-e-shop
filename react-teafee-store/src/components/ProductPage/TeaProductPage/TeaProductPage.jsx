@@ -32,7 +32,7 @@ const TeaProductPage = ({ tea }) => {
       <div className={styles.Product_Types}>
         <h1 className={styles.Product_Items}>{teaProduct.productName}</h1>
         <h2 className={styles.Product_Items}>{teaProduct.productBrand}</h2>
-        <h2 className={styles.Product_Items}>{teaProduct.productPrice}</h2>
+        <h2 className={styles.Product_Items}>${teaProduct.productPrice}</h2>
         <div className={styles.Product_Qty}>
           <h3>Quantity:</h3>
           <div className={styles.Product_Counter}>
