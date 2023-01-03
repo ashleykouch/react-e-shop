@@ -1,0 +1,33 @@
+.Home {
+  &_Img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    & img {
+      width: 80%;
+      height: 100%;
+    }
+  }
+  &_Items {
+    margin-top: 50px;
+  }
+  &_Title {
+    &_Coffee {
+      display: flex;
+      justify-content: center;
+      letter-spacing: 0.5em;
+      background-color: #af9185;
+      color: white;
+    }
+
+    &_Tea {
+      display: flex;
+      justify-content: center;
+      letter-spacing: 0.5em;
+      background-color: #659b6c;
+      color: white;
+    }
+  }
+}

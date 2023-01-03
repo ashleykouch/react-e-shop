@@ -1,0 +1,30 @@
+.Cart {
+  margin-top: 100px;
+
+  &_Header {
+    margin-bottom: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_Title {
+      letter-spacing: 0.5em;
+    }
+  }
+
+  &_Checkout {
+    display: flex;
+    justify-content: flex-end;
+
+    & button {
+      margin: 20px;
+      height: 40px;
+      width: 150px;
+      font-size: 20px;
+      background-color: #659b6c;
+      color: white;
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.Page {
+  &_Container {
+    margin-top: 50px;
+    margin-bottom: 200px;
+  }
+
+  &_Image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    & img {
+      width: 1000px;
+      height: 500px;
+    }
+  }
+  &_Header {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #af9185;
+
+    &_Title {
+      letter-spacing: 0.5em;
+      background-color: #af9185;
+      color: white;
+    }
+  }
+}

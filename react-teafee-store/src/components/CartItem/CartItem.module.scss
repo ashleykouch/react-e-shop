@@ -1,0 +1,33 @@
+.Cart {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+
+  &_Image {
+    & img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &_Counter {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+
+    &_Btn {
+      border: none;
+    }
+  }
+}
+
+.RemovedItem {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

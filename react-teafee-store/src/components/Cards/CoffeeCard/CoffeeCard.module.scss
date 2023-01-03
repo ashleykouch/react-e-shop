@@ -1,0 +1,40 @@
+.Card {
+  border: 1px solid #af9185;
+  border-radius: 6px;
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  margin: 25px;
+
+  &_Image {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &_Items {
+    margin-top: 5px;
+  }
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.AddToCartBtn {
+  position: relative;
+  width: 250px;
+  height: 28px;
+  text-align: center;
+  margin-top: 30px;
+  border-color: #659b6c;
+  border-radius: 10px;
+  background-color: #659b6c;
+  color: white;
+}
+
+.Link {
+  text-decoration: none;
+  color: black;
+}

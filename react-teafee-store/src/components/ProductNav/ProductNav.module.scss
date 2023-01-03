@@ -1,0 +1,39 @@
+.Nav {
+  display: flex;
+  justify-content: center;
+
+  &_Img {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    & img {
+      width: 500px;
+      height: 600px;
+    }
+  }
+  &_Link {
+    &_Coffee {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font-size: 40px;
+      text-decoration: none;
+      background-color: #af9185;
+      color: white;
+    }
+
+    &_Tea {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font-size: 40px;
+      text-decoration: none;
+      background-color: #659b6c;
+      color: white;
+    }
+  }
+}

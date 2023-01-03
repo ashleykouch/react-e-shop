@@ -1,0 +1,30 @@
+.Main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 10px;
+  width: 98vw;
+  img {
+    width: 200px;
+    height: 75px;
+  }
+}
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+
+  &_Link {
+    margin: 0px 20px;
+    color: #b69084;
+    text-decoration: none;
+
+    &_Active {
+      color: #539d73;
+      text-decoration: underline;
+    }
+  }
+}
